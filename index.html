@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynamic Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body class="dark">
+  <div class="container">
+    <header class="hero">
+      <img src="vedant.JPG" alt="Vedant Yadav" class="profile-pic" />
+      <h1><span class="typewriter" data-text="Vedant Yadav - Aspiring Data Scientist"></span></h1>
+      <div class="contacts">
+        <a href="mailto:vedanty01@gmail.com">📧</a>
+        <a href="tel:+919370074455">📱</a>
+        <div class="download-link">
+          <a href="Resume_VY.pdf" download>⬇️ Download Resume (PDF)</a>
+        </div>
+        
+      </div>
+      
+    </header>
+    
+    
+
+    <div class="tabs">
+      <button class="tablink active" onclick="openTab(event, 'profile')">Profile</button>
+      <button class="tablink" onclick="openTab(event, 'education')">Education</button>
+      <button class="tablink" onclick="openTab(event, 'skills')">Skills</button>
+      <button class="tablink" onclick="openTab(event, 'hobbies')">Hobbies</button>
+      <button class="tablink" onclick="openTab(event, 'contact')">Contact Info</button>
+
+    </div>
+
+    <div id="profile" class="tabcontent active">
+      <div class="card">
+        <h2>About Me:</h2>
+        <p>
+        Hardworking and enthusiastic college student working towards a <strong>B.Sc in Data Science</strong> from IIT Madras. Also pursuing a <strong>B.Tech in CSE</strong>. Skilled in <strong>Python</strong>, problem-solving and data analytics. Dedicated to learning and contributing as a team player. A person having vivid interest in dealing with numbers , facts and figures . Always working on improving myself while being humble and honest to the process.
+        </p>
+      </div>
+    <div class="card">
+      <h2>My Work<span class="duration">May 2024-December 2024</span></h2>
+      
+          <h3><strong>Internship Project : IoT Testbed</strong></h3>
+      <u1 class="custom-bullets">
+          <li>Institution : IIT Ropar</li>
+          <li>Duration : 6 months (2 months offline)</li>
+          <li>Project Description :
+          A project showcasing an IoT based testbed designed to simulate real world IoT environment allowing for testing of the systems in a controlled but realistic setting.
+          I was tasked with designing of the testbed page along with database connection coupled with linear programming to write a mathematical model for scheduling of the jobs in the testbed in an efficient manner.</li>
+      </u1>
+
+<div class="certificate">
+        <h4>Certificate</h4>
+      <div class="download-link" style="margin-top: 15px;">
+        <a href="Mr. Vedant Manoj.pdf" target="_blank" class="certificate-link"> View Internship Certificate</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <div id="education" class="tabcontent">
+      <div class="card">
+        <h2>Academic Scores</h2>
+        <u1>
+          <li><strong>10th Grade :</strong> 91.4%</li>
+          <li><strong>12th Grade :</strong> 94.8%</li>
+          <li><strong>JEE Mains :</strong> 96.8 %ile</li>
+          <li><strong>JEE Advanced :</strong> AIR 16k+</li>
+          <li><strong>CET :</strong> 98.6 %ile</li>
+        </u1>
+      </div>
+
+        <div class="card">
+        <h2>B.Sc in Data Science from IIT Madras <span>2023-2027</span></h2>
+        <h3>Skills with proficiency:</h3>
+        <ul class="custom-bullets"> 
+            <li>Data Analytics</li>
+            <li>Vector Transforms</li>
+            <li>Calculus</li>
+            <li>Statistical Models</li></ul>
+        </div>
+
+      <div class="card">
+        <h2>B.Tech in CSE from RSCOE, Pune <span>2022-2026</span></h2>
+        <h3>Skills with proficiency:</h3>
+        <ul class="custom-bullets"> 
+            <li>Data Mining & Machine Learning</li>
+            <li>SQL (DDL, DML)</li>
+            <li>Cloud Computing & DevOps</li>
+            <li>Discrete Mathematics</li>
+          </ul>
+      </div>
+    </div>
+
+    <div id="skills" class="tabcontent">
+      <div class="card">
+        <h2>Skills</h2>
+        <div class="progress">
+          <label>Analytical Thinking</label><div><span style="width:90%"></span></div>
+          <label>Problem Solving</label><div><span style="width:85%"></span></div>
+          <label>Communication</label><div><span style="width:80%"></span></div>
+          <label>Mathematical Reasoning</label><div><span style="width:85%"></span></div>
+          <label>Learning Ability</label><div><span style="width:95%"></span></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="hobbies" class="tabcontent">
+      <div class="card">
+        <h2>Hobbies</h2>
+          <ul class="custom-bullets">
+            <li>An avid person for strategy based games such as sudoku and chess</li>
+            <li>A fitness enthusiast indulging in activities like playing cricket and lifting weights for personal satisfaction</li>
+            <li>Engrossing in problem solving situations to put my analytical abilities to test</li>
+          </ul>
+      </div>
+    </div>
+
+    <div id="contact" class="tabcontent">
+        <div class="card">
+          <h2>Get in touch with me at:</h2>
+            <ul class="contact-points">
+              <li>Email: vedanty01@gmail.com</li>
+              <li>Phone: +91-9370074455</li>
+              <li>GitHub: <a href="https://github.com/V-Y1" target="_blank">https://github.com/V-Y1</a></li>
+              <li>Location: Pune, India</li>
+            </ul>
+      
+        </div>
+      </div>
+      
+
+    <footer>
+      <p>&copy; 2025 Vedant Yadav</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

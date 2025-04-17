@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body.dark {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile-pic {
+    width: 120px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  }
+
+  .card h2 .duration{
+    float: right;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .typewriter::after {
+    content: attr(data-text);
+    display: inline-block;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    white-space: nowrap;
+    animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent }
+  }
+  .custom-bullets {
+    margin-left: 20px;
+    line-height: 1.8;
+  }
+  
+  .custom-bullets li {
+    list-style-type: disc;
+    margin-bottom: 6px;
+  }
+  
+  
+  .contacts a {
+    margin: 10px;
+    font-size: 40px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .contact-points {
+    margin-left: 20px;
+    line-height: 1.8;
+  }
+  
+  .contact-points li {
+    list-style-type: disc;
+    margin-bottom: 6px;
+  }
+  
+  .contact-points a {
+    color: #00ffae;
+    text-decoration: none;
+  }
+  
+  .contact-points a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .tablink {
+    flex: 1;
+    padding: 10px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .tablink:hover, .tablink.active {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+  }
+  
+  .tabcontent {
+    display: none;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .tabcontent.active {
+    display: block;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card h2 span {
+    float: right;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .progress label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 4px;
+  }
+  
+  .progress div {
+    background: #444;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress span {
+    display: block;
+    height: 12px;
+    background: #00ffae;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .tabcontent {
+    display: none;
+  }
+  
+  .tabcontent.active {
+    display: block;
+  }
+  
+  .tabcontent.active-temp {
+    display: block !important;
+  }
+
+  /* Style the GitHub link to match the overall design */
+.card a {
+  color: #00ffae;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s ease;
+}
+
+.card a:hover {
+  color: #00d495;
+  transform: scale(1.05);
+}
+
+
+.download-link a {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #00ffae;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 0.3s, transform 0.3s ease;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.download-link a:hover {
+  background: #00d495;
+  transform: scale(1.05);
+}
+
+.certificate {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #00ffae;
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 1.6;
+
+}  
+
+.certificate-link {
+  display: inline-block;
+  background: #00ffae !important;
+  color: #000 !important;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background 0.3s,color 0.3s;
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+
+.certificate-link:hover {
+  background:  #00ffae !important;
+  color: #000 !important;
+}
+
+.certificate-link:active{
+  background: #00d495 !important;
+  color: #000 !important; 
+}
+  
+  @media print {
+    .tabcontent {
+      display: block !important;
+    }
+    
+  
+    .tabs,
+    #download-section {
+      display: none !important; /* Hide tab buttons and download button in PDF */
+    }
+  }
+  
